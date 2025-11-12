@@ -81,7 +81,7 @@ section {
     margin-bottom: 1rem;
 }
 
-.assignment, .note, .lab { /* Add .lab for the labs section */
+.assignment, .note, .project { /* Add .project for the projects section */
     border: 1px solid #fff; /* Slightly less wide white border */
     padding: 1rem;
     margin: 1rem auto; /* Center the sections */
@@ -91,15 +91,15 @@ section {
     width: 75%; /* Reduce width by 25% */
 }
 
-.assignment:hover, .note:hover, .lab:hover { /* Add .lab for hover effect */
+.assignment:hover, .note:hover, .project:hover { /* Add .project for hover effect */
     transform: scale(1.05); /* Slightly enlarge the section on hover */
 }
 
-.assignment h3, .note h3, .lab h3 { /* Add .lab for titles */
+.assignment h3, .note h3, .project h3 { /* Add .project for titles */
     color: #fff; /* White color for titles */
 }
 
-.assignment p, .note p, .lab p { /* Add .lab for descriptions */
+.assignment p, .note p, .project p { /* Add .project for descriptions */
     color: #fff; /* White color for descriptions */
 }
 
