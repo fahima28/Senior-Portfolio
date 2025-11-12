@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Junior Year Labs</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,12 +17,40 @@
                 <li><a href="index.html">About Me</a></li>
                 <li><a href="assignments.html">Assignments</a></li>
                 <li><a href="notes.html">Notes</a></li>
-                <li><a href="projects.html">Projects</a></li>
+                <li><a href="labs.html" class="active">Projects</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Renamed id from labs -> projects -->
     <section id="projects">
-        <h2>Labs</h2>
+        <h2>Senior Year Projects</h2>
+
+        <!-- First project: video -->
+        <div class="project">
+            <h3>Congressional App Challenge</h3>
+
+            <!-- If you have a local MP4 file, use the <video> tag below and replace src -->
+            <!-- <video controls width="90%">
+                <source src="YOUR_VIDEO_FILENAME.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video> -->
+
+            <!-- If your video is on YouTube, replace the src below with your YouTube embed link -->
+            <!-- Example format: https://www.youtube.com/embed/VIDEO_ID -->
+            <iframe
+                width="90%" height="400" frameborder="0"
+                src="PASTE_YOUR_YOUTUBE_EMBED_LINK_HERE"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen>
+            </iframe>
+
+            <p>A short demo and overview of my app for the Congressional App Challenge.</p>
+        </div>
+
+        <h2>Junior Year Labs</h2>
+
+        <!-- Switched class from 'lab' -> 'project' to match updated CSS -->
         <div class="project">
             <h3>Silly Sentences</h3>
             <iframe src="https://py3.codeskulptor.org/#user309_MhKBCR25cT_0.py" width="90%" height="400" frameborder="0"></iframe>
