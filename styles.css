@@ -1,37 +1,120 @@
-/* ===== Resume Section Styling ===== */
-#resume {
-    background-color: transparent;
-    border: none;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2e2e2e; /* Dark gray background for the whole page */
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #000; /* Black header background */
+    color: #fff; /* White header text */
+    padding: 1rem 0;
     text-align: center;
+    position: relative; /* Ensure images are positioned relative to header */
 }
 
-.resume-card {
-    background-color: #0f2647;       /* Navy background */
-    color: #ffffff;
-    width: 65%;                      /* Narrower centered box */
-    margin: 0 auto;                  /* Center the card */
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
-    text-align: left;                /* Text inside is left-aligned */
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem; /* Ensure there's space below the main title */
 }
 
-.resume-card h3 {
-    color: #ffffff;
-    border-bottom: 1px solid #1e3a75;
-    padding-bottom: 0.3rem;
+header .subtitle {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 1rem;
 }
 
-.resume-block {
-    margin-bottom: 1.5rem;
+header img.profile-image {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
 }
 
-.resume-email {
-    color: #7ab8ff;                  /* Light blue for visibility */
+header img.school-image {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* Dark gray navigation bar */
+    padding: 0.5rem 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff; /* White navigation links */
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
 }
 
-.resume-email:hover {
-    text-decoration: underline;
-    color: #a4d2ff;
+nav ul li a:hover {
+    background-color: #f00; /* Red background on hover */
+    transform: scale(1.1); /* Slightly enlarge the navigation link on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for popping out effect */
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #3e3e3e; /* Slightly lighter dark gray for content sections */
+    border: 2px solid #f00; /* Red border for content sections */
+    margin-bottom: 1rem;
+}
+
+.assignment,
+.note,
+.project {
+    /* Add .project for the projects section */
+    border: 1px solid #fff; /* Slightly less wide white border */
+    padding: 1rem;
+    margin: 1rem auto; /* Center the sections */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+    background-color: #4e4e4e; /* Even lighter dark gray for individual sections */
+    width: 75%; /* Reduce width by 25% */
+}
+
+.assignment:hover,
+.note:hover,
+.project:hover {
+    /* Add .project for hover effect */
+    transform: scale(1.05); /* Slightly enlarge the section on hover */
+}
+
+.assignment h3,
+.note h3,
+.project h3 {
+    /* Add .project for titles */
+    color: #fff; /* White color for titles */
+}
+
+.assignment p,
+.note p,
+.project p {
+    /* Add .project for descriptions */
+    color: #fff; /* White color for descriptions */
+}
+
+iframe {
+    border: 1px solid #000;
 }
