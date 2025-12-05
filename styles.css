@@ -11,13 +11,13 @@ header {
     color: #fff; /* White header text */
     padding: 1rem 0;
     text-align: center;
-    position: relative; /* Ensure images are positioned relative to header */
+    position: relative;
 }
 
 header h1 {
     margin: 0;
     font-size: 2.5rem;
-    margin-bottom: 0.5rem; /* Ensure there's space below the main title */
+    margin-bottom: 0.5rem;
 }
 
 header .subtitle {
@@ -31,18 +31,18 @@ header img.profile-image {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 100px; /* Adjust size as needed */
+    width: 100px;
     height: auto;
-    border-radius: 10px; /* Optional: Add rounded corners */
+    border-radius: 10px;
 }
 
 header img.school-image {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 100px; /* Adjust size as needed */
+    width: 100px;
     height: auto;
-    border-radius: 10px; /* Optional: Add rounded corners */
+    border-radius: 10px;
 }
 
 nav ul {
@@ -51,7 +51,7 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: center;
-    background-color: #333; /* Dark gray navigation bar */
+    background-color: #333;
     padding: 0.5rem 0;
 }
 
@@ -60,54 +60,64 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff; /* White navigation links */
+    color: #fff;
     text-decoration: none;
     padding: 0.5rem 1rem;
-    border-radius: 5px; /* Add rounded corners */
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #f00; /* Red background on hover */
-    transform: scale(1.1); /* Slightly enlarge the navigation link on hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Add shadow for popping out effect */
+    background-color: #f00;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 section {
     padding: 2rem;
     text-align: center;
-    background-color: #3e3e3e; /* Slightly lighter dark gray for content sections */
-    border: 2px solid #f00; /* Red border for content sections */
+    background-color: #3e3e3e;
+    border: 2px solid #f00;
     margin-bottom: 1rem;
 }
 
-.assignment, .note, .project { /* Add .project for the projects section */
-    border: 1px solid #fff; /* Slightly less wide white border */
+.assignment, .note, .project {
+    border: 1px solid #fff;
     padding: 1rem;
-    margin: 1rem auto; /* Center the sections */
-    border-radius: 10px; /* Rounded corners */
-    transition: transform 0.3s; /* Smooth transition for hover effect */
-    background-color: #4e4e4e; /* Even lighter dark gray for individual sections */
-    width: 75%; /* Reduce width by 25% */
+    margin: 1rem auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    background-color: #4e4e4e;
+    width: 75%;
 }
 
-.assignment:hover, .note:hover, .project:hover { /* Add .project for hover effect */
-    transform: scale(1.05); /* Slightly enlarge the section on hover */
+.assignment:hover, .note:hover, .project:hover {
+    transform: scale(1.05);
 }
 
-.assignment h3, .note h3, .project h3 { /* Add .project for titles */
-    color: #fff; /* White color for titles */
+.assignment h3, .note h3, .project h3 {
+    color: #fff;
 }
 
-.assignment p, .note p, .project p { /* Add .project for descriptions */
-    color: #fff; /* White color for descriptions */
+.assignment p, .note p, .project p {
+    color: #fff;
 }
 
+/* Default iframe border */
 iframe {
     border: 1px solid #000;
+    border-radius: 8px;          /* ✔ rounded corners */
+    background-color: #fff;      /* ✔ prevents transparency glitch */
 }
 
-/* ⭐ NEW: Style for the Pet Adoption Project link */
+/* Special styling for project iframes */
+.project iframe {
+    margin-top: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.5);  /* ✔ soft shadow around iframe */
+    width: 90%;
+}
+
+/* Maintain your project button style (in case you still use it elsewhere) */
 .project a {
     display: inline-block;
     margin-top: 10px;
